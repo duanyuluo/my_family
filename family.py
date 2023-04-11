@@ -1,6 +1,8 @@
-#encoding = utf-8
+# encoding = utf-8
 
+# person
 from person import *
+
 
 class Family(object):
     def __init__(self) -> None:
@@ -38,4 +40,3 @@ class Family(object):
     def start_report(self):
         for member in self.members:
             member.report()
-    
