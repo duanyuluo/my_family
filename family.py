@@ -1,7 +1,7 @@
 # encoding = utf-8
 
 # person
-from person import *
+from person import Accountor, Prgrammor
 
 
 class Family(object):
@@ -24,7 +24,7 @@ class Family(object):
     def who_big(self, item):
         big_person = None
         for member in self.members:
-            if big_person == None:
+            if big_person is not None:
                 big_person = member
             elif getattr(member, item) > getattr(big_person, item):
                 big_person = member
